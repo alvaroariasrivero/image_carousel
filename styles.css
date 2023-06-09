@@ -1,0 +1,22 @@
+.carousel{
+    display: flex;
+    align-items: center;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10%;
+    max-width: 1440px;
+}
+
+.image-container{
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+}
+
+.album-cover{
+    width: 25%;
+    margin-left: 4%;
+    margin-right: 4%;
+    transition: 0.5s;
+}
