@@ -10,7 +10,9 @@
 
 #image-container{
     display: flex;
+    justify-content: flex-start;
     width: 100%;
+    transition: .5s ease all;
     overflow: hidden;
 }
 
@@ -19,6 +21,8 @@
     margin-left: 4%;
     margin-right: 4%;
     cursor: pointer;
+    position: relative;
+    left: -33%;
 }
 
 #popup-container{
