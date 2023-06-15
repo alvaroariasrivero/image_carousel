@@ -5,6 +5,7 @@ const closePopUp = document.getElementById('close-popup');
 const popUpContainer = document.getElementById('popup-container');
 let albumCover = document.querySelectorAll('.album-cover');
 let popUpImage = document.getElementById('popup-image');
+let imagePopupContainer = document.querySelector('.image-popup-container');
 
 next.addEventListener('click', function() {
     const firstAlbum = imageContainer.firstElementChild;
@@ -45,4 +46,12 @@ albumCover.forEach(function(cover){
 
 closePopUp.addEventListener('click', function(){
     popUpContainer.style.display = 'none';
+});
+
+popUpContainer.addEventListener('click', function() {
+    popUpContainer.style.display = 'none';
+});
+
+imagePopupContainer.addEventListener('click', function(event) {
+    event.stopPropagation();
 });
